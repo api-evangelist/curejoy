@@ -1,7 +1,24 @@
 aid: curejoy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/curejoy.png
 name: Curejoy
-description: 'Curejoy is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'CureJoy is a consumer health and wellness media company that publishes expert-reviewed
+  content on alternative health, natural remedies, fitness, nutrition, and beauty. Backed by Accel,
+  it grew into one of the larger natural-health content platforms, distributing articles and advice
+  through its website and social channels. The public property is a WordPress.com-hosted content
+  site with no first-party developer or product API; the only programmatic surface is the standard
+  WordPress REST API (wp-json) exposed by the hosting platform, which is generic infrastructure
+  rather than a published product offering.'
 url: https://raw.githubusercontent.com/api-evangelist/curejoy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +28,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Health
+- Wellness
+- Content
+- Media
+- Alternative Medicine
+- Fitness
+- Beauty
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +46,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/curejoy-domain-security.yml
 - type: Website
-  url: http://www.curejoy.com
+  url: https://curejoy.com
+- type: Blog
+  url: https://curejoy.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
